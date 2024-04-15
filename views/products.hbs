@@ -1,0 +1,18 @@
+<h1>Products</h1>
+
+<div class="my-3">
+    <a href="/products?order=asc" class="btn btn-dark">ASC</a>
+    <a href="/products?order=desc" class="btn btn-dark">DESC</a>
+</div>
+
+<ul>
+    {{#each products}}
+
+    <li>
+        <a href="{{this.id}}">
+            {{this.name}} - {{this.price}}
+        </a>  
+    </li>
+
+    {{/each}}
+</ul>
